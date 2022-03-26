@@ -74,3 +74,9 @@ class Question(GenericQuestion):
     @points.setter
     def points(self, value):
         self._points = value
+
+    def set_correct_answers(self, correct_answers):
+        self._correct_answers = correct_answers
+
+    def set_points(self, points):
+        self._points = points

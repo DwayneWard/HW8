@@ -1,10 +1,14 @@
-from functions import form_random_question, set_game_data, read_json, final_points
+from functions import form_random_question, set_game_data, read_json, final_points, print_info
+import time
 
 jsn_questions = read_json("questions.json")
 questions = form_random_question(jsn_questions)
 
 # Для записи данных, после игры (отвечен ли вопрос, количество баллов и т.д.)
 final_data = []
+
+print_info()
+time.sleep(10)
 
 for idx, question in enumerate(questions):
 

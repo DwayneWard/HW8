@@ -2,6 +2,11 @@ import random
 from classes import Question
 import json
 
+def print_info():
+    print("""Перед началом игры необходимо знать:
+1. На вопросы можно отвечать либо цифрами, либо словами;
+2. Ответ словами записывается ТОЛЬКО прописными буквами (например, november);
+3. Игра начнется через 10 секунд\n""")
 
 def read_json(file: json) -> dict:
     """
