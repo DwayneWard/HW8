@@ -30,5 +30,6 @@ for idx, question in enumerate(questions):
 quantity = len(final_data)
 final_points = get_final_points(final_data)
 correct_questions_quantity = get_correct_questions_quantity(final_data)
+
 print(f"""\nВот и все! Вы ответили на {correct_questions_quantity} из {quantity} вопросов
 и заработали {final_points} очков!""")
