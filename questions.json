@@ -1,0 +1,52 @@
+{
+  "1": {
+    "question": "How many days do we have in a week?",
+    "author": "Данилов Константин",
+    "hardness": "1",
+    "correct_answers": ["seven", "7"],
+    "unit": "Calendar",
+    "is_asked": "",
+    "user_answer": "",
+    "points": ""
+  },
+  "2": {
+    "question": "How many days are there in a normal year?",
+    "author": "Данилов Константин",
+    "hardness": "1",
+    "correct_answers": ["365"],
+    "unit": "Calendar",
+    "is_asked": "",
+    "user_answer": "",
+    "points": ""
+  },
+  "3": {
+    "question": "Which month of the year has the least number of days?",
+    "author": "Данилов Константин",
+    "hardness": "3",
+    "correct_answers": ["february"],
+    "unit": "Calendar",
+    "is_asked": "",
+    "user_answer": "",
+    "points": ""
+  },
+  "4": {
+    "question": "How many players are there in each side of a Hockey team?",
+    "author": "Данилов Константин",
+    "hardness": "5",
+    "correct_answers": ["11", "eleven"],
+    "unit": "Sport",
+    "is_asked": "",
+    "user_answer": "",
+    "points": ""
+  },
+  "5": {
+    "question": "In which direction does the sunrise?",
+    "author": "Данилов Константин",
+    "hardness": "3",
+    "correct_answers": ["east"],
+    "unit": "Geography",
+    "is_asked": "",
+    "user_answer": "",
+    "points": ""
+  }
+}
