@@ -3,7 +3,8 @@ from classes import Question
 import json
 
 def print_info():
-    print("""Перед началом игры необходимо знать:
+    print("""Добро пожаловать в игру-тест на знание английского языка!
+Перед началом игры необходимо знать:
 1. На вопросы можно отвечать либо цифрами, либо словами;
 2. Ответ словами записывается ТОЛЬКО прописными буквами (например, november);
 3. Игра начнется через 10 секунд\n""")
@@ -60,11 +61,11 @@ def set_game_data(question: Question) -> Question:
     return question
 
 
-def final_points(final_data: list) -> int:
+def get_correct_questions_quantity(final_data: list) -> int:
     """
     Функция возвращает количество правильных ответов пользователя
 
-    :param questions: Список вопросов с необходимыми записями по окончании игры
+    :param final_data: Список вопросов с необходимыми записями по окончании игры
 
     :return: Количество правильно отвеченных вопросов
     """
@@ -76,3 +77,17 @@ def final_points(final_data: list) -> int:
             correct += 1
 
     return correct
+
+def get_final_points(final_data: list) -> int:
+    """
+    Функция возвращает количество правильных ответов пользователя
+
+    :param final_data: Список вопросов с необходимыми записями по окончании игры
+
+    :return: Количество очков, заработанных пользователем
+    """
+    final_points = 0
+    for data in final_data:
+        if data.is_asked:
+            final_points += data.points
+    return final_points

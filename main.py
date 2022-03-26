@@ -1,4 +1,5 @@
-from functions import form_random_question, set_game_data, read_json, final_points, print_info
+from functions import form_random_question, set_game_data, read_json, get_correct_questions_quantity, print_info, \
+    get_final_points
 import time
 
 jsn_questions = read_json("questions.json")
@@ -27,4 +28,7 @@ for idx, question in enumerate(questions):
         print(f"Ответ неверный. Верный ответ: {correct_answer}")
 
 quantity = len(final_data)
-print(f"Вот и все! Отвечено {final_points(final_data)} из {quantity}")
+final_points = get_final_points(final_data)
+correct_questions_quantity = get_correct_questions_quantity(final_data)
+print(f"""\nВот и все! Вы ответили на {correct_questions_quantity} из {quantity} вопросов
+и заработали {final_points} очков!""")
